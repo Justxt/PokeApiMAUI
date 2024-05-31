@@ -7,14 +7,14 @@
     <ScrollView>
 
         <VerticalStackLayout>
-        <ListView x:Name="pokeInfoss" ItemsSource="{Binding pokeInfos}">
-            <ListView.ItemTemplate>
+            <ListView x:Name="pokeInfoss" ItemsSource="{Binding pokeInfos}" ItemSelected="ShowPokeResume">
+                <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Grid Padding="10">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*" />
-                                <RowDefinition Height="*" />
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="1" />
                             </Grid.RowDefinitions>
 
 

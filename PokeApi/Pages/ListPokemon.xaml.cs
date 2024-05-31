@@ -22,7 +22,10 @@ public partial class ListPokemon : ContentPage
 		pokeInfoss.ItemsSource = pokeInfos;
     }
 
-
-
+	public void ShowPokeResume(object sender, SelectedItemChangedEventArgs e)
+	{
+		PokeInfo pokeInfo = (PokeInfo)e.SelectedItem;
+		Navigation.PushAsync(new Pages.PokeResume(pokeInfo.url));
+    }
 
 }

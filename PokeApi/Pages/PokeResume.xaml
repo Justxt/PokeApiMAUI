@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokeApi.Pages.PokeResume"
+             Title="PokeResume">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image
+                x:Name="PokeImage"
+                Source="{Binding sprites.front_default}"
+                HeightRequest="400"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Label 
+                x:Name="Abilitiess"
+                HorizontalOptions="Center"  />
+
+            <Label
+                x:Name="effectP"
+                HorizontalOptions="Center"
+                Padding="50"/>
+
+            <Label
+                x:Name="shortEffectP"
+                HorizontalOptions="Center"
+                Padding="10"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
